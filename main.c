@@ -4,7 +4,6 @@
 
 int main(){
     int choice, err, value;
-    // getInt(&value, "Введите значение корня дерева: ");
     if (getInt(&value, "Введите значение корня дерева: ") == -1){ return 0; }
     Tree* root = createTree(value);
     if (root == NULL){
@@ -54,14 +53,5 @@ int main(){
         }
         printf("\n");
     }
-    /*
-    Tree *t = tree_create(1);
-    tree_add_node(t, 2);
-    Tree *f = tree_add_node(t, 3);
-    tree_add_node(t, 4);
-    Tree *g = tree_add_node(f, 5);
-    tree_add_node(g, 8);
-    tree_add_node(g, 10);
-    tree_print(t);*/
     return 0;
 }
